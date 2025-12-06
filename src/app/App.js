@@ -1,10 +1,11 @@
 import HomePage from "../pages/Home";
 
-
 function App() {
-  return (
-    <HomePage name="GDSE" status={"busy"}/>
-  );
+    return (
+
+        <HomePage />
+
+    );
 }
 
 export default App;

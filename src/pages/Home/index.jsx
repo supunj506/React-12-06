@@ -1,4 +1,7 @@
-import {Component} from "react";
+import {Component, Fragment} from "react";
+import Greeting from "../../components/Home/Greeting/Greeting";
+import Countable from "../../components/Home/Countable";
+import {Divider} from "@mui/material";
 
 class HomePage extends Component{
     // eslint-disable-next-line no-useless-constructor
@@ -7,10 +10,12 @@ class HomePage extends Component{
     }
     render() {
         return(
-            <div>
-                <h1>hello from the Home Page</h1>
-                <h2>what's up {this.props.name} and now status {this.props.status}</h2>
-            </div>
+            <Fragment>
+                <Greeting />
+                <Divider />
+                <Countable />
+            </Fragment>
+
         )
     }
 }
